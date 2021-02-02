@@ -1,6 +1,12 @@
 // routes
 // post: /hello
 // http://localhost:1337/parse/functions/hello
+// request header:
+// X-Parse-Application-Id: myAppId
+/*
+Request Headers
+X-Parse-Application-Id: myAppId
+*/
 Parse.Cloud.define('hello', function (req, res) {
   var obj = new Parse.Object('GameScore');
   console.log('obj', obj);

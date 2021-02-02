@@ -7,8 +7,13 @@
 - install parse-dashboard
 ```bash
 npm install -g parse-dashboard
+# new and update config
 touch parse-dashboard-config.json
 parse-dashboard --config parse-dashboard-config.json
+```
+```bash
+# https://www.npmjs.com/package/nodemon
+
 ```
 - parse query: https://parseplatform.org/Parse-SDK-JS/api/master/Parse.Query.html
 - triggers: https://docs.parseplatform.org/cloudcode/guide/#save-triggers
@@ -19,3 +24,16 @@ parse-dashboard --config parse-dashboard-config.json
   - event Parse.Cloud.beforeSave:
     - https://docs.parseplatform.org/cloudcode/guide/#implementing-data-validation
     - https://github.com/parse-community/parse-server/issues/5058
+
+start app
+```bash
+# cd to app
+cd /Users/dat/Developer/Code/parse-server-example
+# start parse-server
+npm run start
+# open http://localhost:1337
+
+# start parse-dashboard
+parse-dashboard --config parse-dashboard-config.json
+# open http://localhost:4040
+```
